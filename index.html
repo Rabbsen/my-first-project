@@ -12,14 +12,15 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <!-- Custom CSS Link -->
         <link rel="stylesheet" href="assets\css\style.css">
-        
-
+        <!-- font link -->
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-transparent" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="assets\images\Logo.png" alt="Gammelby Pikes Logo" width="75" height="75">
+          <img src="assets\images\Pikeslogo.png" alt="Gammelby Pikes Logo" width="250" height="250">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -30,7 +31,10 @@
               <a class="nav-link active" aria-current="page" href="#navbar">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
         </div>
@@ -39,11 +43,11 @@
 
     <!-- Header with hero -->
     <header>
-      <section class="container hero-picture">
-        <div class="hero">
-          <h1 class="display-4">Join our newsletter to know about upcoming events!</h1> 
+      <section class="hero-picture hero">
+        <div>
+          <h1>Join our newsletter to know about <br>up-coming events!</h1> 
         </div>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">      
+        <button type="button" class="col-4 mt-5 p-2 btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">      
          Join Here!
         </button>
         <!-- Modal -->
@@ -51,11 +55,20 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Newsletter</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                ...
+                <p>Subscribe to our Newsletter to be notified via email about special offers and competitions held in the area</p>
+                <div>
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                  </form>
+                </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -66,7 +79,7 @@
         </div>        
       </section>
       <!-- About us section -->
-      <section>
+      <section id="about">
         <div class="container about-us mt-5 text-center">
           <h1 class="p-3">Who are we?<br> well we are a small Catch and Release fishing team grounded in 2016 with a main focus on Northen pike fishing,
             we are based in the south of Sweden and fish all over the country and sometimes abroad.
@@ -80,7 +93,13 @@
     </header>
     <footer class="footer">
       <div class="container">
-        <span class="text-muted d-flex">© 2024 Gammelby Pikes Fishing Team</span>
+        <div class="p-4 mt-auto">
+        <p>Our Socials:</p>
+        <a href="https://instagram.com">Instagram</a>
+        <a href="https://facebook.com">Facebook</a>
+        <a href="https://youtube.com">Youtube</a>
+        </div>
+        <span class="justify-content-center text-muted d-flex">© 2024 Gammelby Pikes Fishing Team</span>
 
       </div>
     </footer>

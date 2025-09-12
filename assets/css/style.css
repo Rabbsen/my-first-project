@@ -1,0 +1,27 @@
+
+/*google font import*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+/*style for top page section*/
+
+.navbar {
+    justify-content: space-between;
+    background-color:#4C704F;
+}
+
+body {
+    background-color:#5D8E52;
+    margin:0;
+}
+
+.hero {
+    background-image: url('assets\images\hero background.jpg');
+    min-height:400px;
+    background-size:relative;
+    background-position:center;
+    background-color:blue;
+}

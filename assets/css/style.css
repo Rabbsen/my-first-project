@@ -37,13 +37,43 @@ body {
 }
 
 
-.footer {
-    display:block;
+footer {
+    display:flex;
     height: 150px;
     width:100%;
     background-color: #727171;
     margin-top:2.5em;
-    text-align:justify;
-    
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    align-items:flex-start;
+}
 
+footer a {
+    color:white;
+}
+a:hover {
+    color:#363636;
+}
+.footer-social {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    padding:5px;
+    text-align:left;
+    align-self:center;
+}
+.footer-contact {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:5px;
+    text-align:left;
+    align-self:center
+}
+.endspan {
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    background-color: #727171;
 }

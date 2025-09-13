@@ -18,20 +18,23 @@
     <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-transparent" id="navbar">
-      <div class="container">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="assets\images\Pikeslogo.png" alt="Gammelby Pikes Logo" width="250" height="250">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#navbar">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Events</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -47,7 +50,7 @@
         <div>
           <h1>Join our newsletter to know about <br>up-coming events!</h1> 
         </div>
-        <button type="button" class="col-4 mt-5 p-2 btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">      
+        <button type="button" class="col-4 mt-5 p-2 btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">      
          Join Here!
         </button>
         <!-- Modal -->
@@ -81,28 +84,36 @@
       <!-- About us section -->
       <section id="about">
         <div class="container about-us mt-5 text-center">
-          <h1 class="p-3">Who are we?<br> well we are a small Catch and Release fishing team grounded in 2016 with a main focus on Northen pike fishing,
+          <div>
+            <h1>About our team</h1>
+          </div>
+          <h4 class="p-3">Who are we?<br> well we are a small Catch and Release fishing team grounded in 2016 with a main focus on Northen pike fishing,
             we are based in the south of Sweden and fish all over the country and sometimes abroad.
             We are a team of 4 anglers that loves to fish and compete in tournaments, we also love to share our passion for fishing with others.
             Our main goal is to promote Catch and Release fishing and to inspire others to do the same.
             We also want to show that fishing is not only about catching fish, but also about enjoying nature and spending time with friends.
             So if you are interested in fishing, nature and having fun, join us on our journey!
-          </h1>
+          </h4>
         </div>
       </section>
     </header>
-    <footer class="footer">
-      <div class="container">
-        <div class="p-4 mt-auto">
-        <p>Our Socials:</p>
-        <a href="https://instagram.com">Instagram</a>
-        <a href="https://facebook.com">Facebook</a>
-        <a href="https://youtube.com">Youtube</a>
-        </div>
-        <span class="justify-content-center text-muted d-flex">© 2024 Gammelby Pikes Fishing Team</span>
-
+    <!-- Footer -->
+    <footer class="d-flex">
+      <div class="footer-social m-lg-2">
+        <p class="mb-0">Our Socials:</p>
+        <a href="https://instagram.com">:Instagram</a>
+        <a href="https://facebook.com">:Facebook</a>
+        <a href="https://youtube.com">:Youtube</a>
+      </div>
+      <div class="footer-contact m-lg-2">
+        <p class="mb-0">Our Contacts:</p>
+        <a href="#">Email:gammelbypikes@gmail.com</a>
+        <a href="#">Phone: 076-324-1244</a>
       </div>
     </footer>
+    <div>
+      <span class="text-muted endspan">© 2024 Gammelby Pikes Fishing</span>
+    </div>
     <!-- Bootstrap JS Link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>

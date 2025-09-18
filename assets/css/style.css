@@ -3,6 +3,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*body styling*/
+
+body {
+    background-color:#616060;
+    font-family: "Fugaz One", sans-serif;
+    color:#1d1d1d;
+    display:flex;
+    min-height:100vh;
+    flex-direction:column;
+    justify-content: center;
+
+}
+
+main {
+    flex:1 0 auto;
+}
 
 
 
@@ -13,11 +29,14 @@
     background-color:#363636;
     font-size: 2.5em;
 }
+@media (max-width: 768px) {
+    .navbar {
+        justify-content:center;
+    }
 
-body {
-    background-color:#616060;
-    font-family: "Fugaz One", sans-serif;
-    color:#1d1d1d
+}
+.logo {
+    margin-left:27px;
 }
 .hero {
     display: flex;
@@ -35,11 +54,29 @@ body {
     background-position:center;
     margin-top:2.5em;;
 }
+/* events */
 
+@media (max-width:768px) {
+    .list {
+        align-items:center;
+    }
+}
+
+.list li {
+    border-bottom:5px solid black;
+    padding: 15px;
+}
+
+.list li:last-child {
+    border-bottom:none;
+}
+
+
+/* Footer section styling */
 
 footer {
     display:flex;
-    height: 150px;
+    height: 130px;
     width:100%;
     background-color: #727171;
     margin-top:2.5em;
@@ -76,4 +113,11 @@ a:hover {
     justify-content:center;
     text-align:center;
     background-color: #727171;
+    bottom:0;
+}
+
+/*about*/
+
+#form {
+    height:400px;
 }

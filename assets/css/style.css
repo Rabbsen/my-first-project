@@ -39,13 +39,13 @@ main {
     .navbar-nav {
         text-align: center;
     }
+    .logo {
+        margin-left:37px;
+    }
 
 }
 .navbar-nav {
     padding-left:45px;
-}
-.logo {
-    margin-left:27px;
 }
 .hero {
     display: flex;

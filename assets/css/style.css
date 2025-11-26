@@ -46,11 +46,11 @@ main {
     height:250px;
 }
 .navbar .navtxt {
-    color:#000000;
+    color:#1d1d1d;
     text-decoration: none;
 }
 .navtxt:hover {
-    color:#363636;
+    color:#000000;
 }
 @media (max-width: 768px) {
     
